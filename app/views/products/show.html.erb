@@ -1,0 +1,27 @@
+<%= render 'home/header' %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kod:</strong>
+  <%= @product.kod %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Counter:</strong>
+  <%= @product.counter %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @product.date %>
+</p>
+
+<% if @product.user == current_user %>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+<% end %>
+<%= link_to 'Back', products_path %>

@@ -1,0 +1,8 @@
+<%= render 'home/header' %>
+<h1>Witaj!</h1>
+<p>Tu możesz dodać/usunąć towar!</p>
+<h2>Dodaj produkt:</h2>
+<p><%= link_to 'New product ->', new_product_path, class: 'btn btn-info' %></p>
+<p><%= link_to 'Uwagi od planistów ->', pins_path, class: 'btn btn-info' %></p>
+<h2>Usuń produkt:</h2>
+<p><%= link_to 'Edit list of products ->', products_path, class: 'btn btn-info' %></p>
